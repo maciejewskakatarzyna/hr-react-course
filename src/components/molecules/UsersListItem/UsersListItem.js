@@ -4,7 +4,7 @@ import DeleteButton from 'components/atoms/DeleteButton/DeleteButton';
 import Average from 'components/atoms/Average/Average';
 import { Wrapper, Container, Name, Attendance } from './UsersListItem.styles';
 import { UserShape } from 'types';
-import { UsersContext } from 'views/Root';
+import { UsersContext } from 'providers/UsersProvider';
 
 const UsersListItem = ({ userData: { average, name, attendance = '0%' } }) => {
   const { deleteUser } = useContext(UsersContext);
