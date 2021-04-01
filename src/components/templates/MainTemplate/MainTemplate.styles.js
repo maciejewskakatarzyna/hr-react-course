@@ -7,6 +7,13 @@ export const Wrapper = styled.div`
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 150px 1fr 0.75fr;
+  grid-template-rows: 90px 1fr;
   background-color: ${({ theme }) => theme.colors.lightGrey};
+`;
+
+export const News = styled.div`
+  grid-row: 1 / 3;
+  grid-column: 3 / 3;
+  border-left: 1px solid ${({ theme }) => theme.colors.darkPurple};
 `;
